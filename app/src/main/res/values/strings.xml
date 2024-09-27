@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">Money Link</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_userId">UserId</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_userId">Not a valid userId</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="target_period">"対象期間"</string>
+    <string name="from">"2022/07/01"</string>
+    <string name="range">"～"</string>
+    <string name="to">"2022/08/31"</string>
+    <string name="display">"表示"</string>
+    <string name="reverse">"昇降"</string>
+
+    // 9/27変更
+    <string name="page_transition">"詳細"</string>　
+
+    <string name="withdrawal_details">"入出金履歴"</string>
+    <string name="date">"日付"</string>
+    <string name="contents">"内容"</string>
+    <string name="amount">"金額"</string>
+    <string name="budget">"収支合計"</string>
+    <string name="income">"収入"</string>
+    <string name="spending">"支出"</string>
+    <string name="max_spending">"最大支出"</string>
+    <string name="max_date">"日付"</string>
+    <string name="max_dealer">"取引先"</string>
+    <string name="max_contents">"内容"</string>
+    <string name="max_purpose">"用途"</string>
+    <string name="max_amount">"金額"</string>
+
+    // 9/27追加
+    <string name="balance">"残高"</string>
+    <string name="account_balance">"口座残高"</string>
+    <string name="projected_balance">"見込み残高"</string>
+
+    <string name="list1" tools:ignore="Typos">"List1"</string>
+    <string name="list2">"List2"</string>
+    <string name="list3">"List3"</string>
+    <string name="tab1_contents" tools:ignore="Typos">"TAB1の内容（フラグメント）"</string>
+    <string name="tab2_contents">"TAB2の内容（フラグメント）"</string>
+    <string name="tab3_contents">"TAB3の内容（フラグメント）"</string>
+</resources>

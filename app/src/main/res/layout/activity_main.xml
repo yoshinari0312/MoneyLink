@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EBAF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!-- 対象期間を入力する領域 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/target_period" />
+
+        <EditText
+            android:id="@+id/etStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autofillHints="no"
+            android:focusable="false"
+            android:inputType="number"
+            android:text="@string/from"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/range">
+
+            <requestFocus />
+        </TextView>
+
+        <EditText
+            android:id="@+id/etEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:inputType="number"
+            android:text="@string/to"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:text="@string/display" />
+
+        <Button
+            android:id="@+id/newButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:text="@string/reverse" />
+
+        <Button
+            android:id="@+id/btLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:text="@string/page_transition" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#005B47"
+            android:text="@string/withdrawal_details"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffbb00"
+            android:gravity="center"
+            android:text="@string/date" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#ffbb00"
+            android:gravity="center"
+            android:text="@string/contents" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffbb00"
+            android:gravity="center"
+            android:text="@string/amount" />
+    </LinearLayout>
+
+    <!-- 収支の表示領域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvHistoricalData"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+     </ListView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#005B47"
+         android:text="@string/budget"
+         android:textColor="#ffffff"
+         android:textSize="18sp" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="30dp"
+             android:layout_weight="1"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:text="@string/income"
+             android:textSize="16sp" />
+
+         <TextView
+             android:id="@+id/tvIncome"
+             android:layout_width="0dp"
+             android:layout_height="30dp"
+             android:layout_weight="1"
+             android:gravity="end"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:textSize="16sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="30sp"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="30dp"
+             android:layout_weight="1"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:text="@string/spending"
+             android:textSize="16sp" />
+
+         <TextView
+             android:id="@+id/tvExpense"
+             android:layout_width="0dp"
+             android:layout_height="30dp"
+             android:layout_weight="1"
+             android:gravity="end"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:textSize="16sp" />
+     </LinearLayout>
+
+ </LinearLayout>
+
+ <!-- 9/27変更　残高の表示領域 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005B47"
+        android:text="@string/balance"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/account_balance"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAccountBalance"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/projected_balance"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvProjectedBalance"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
